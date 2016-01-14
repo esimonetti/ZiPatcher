@@ -34,6 +34,8 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 define('sugarEntry', true);
+require_once('include/utils/autoloader.php');
+require_once('include/upload_file.php');
 class ZiPatcher{
 	protected $skipScan = array('./cache', './ZiPatcher', './files.md5');
 	protected $skipCopy = array('ZiPatcher/packages/', '.DS_Store');
